@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="UTF-8">
+
+	<meta name="description" content="Violate Responsive Admin Template">
+	<meta name="keywords" content="Super Admin, Admin, Template, Bootstrap">
+
+	<title>Super Admin Responsive Template</title>
+
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/form.css" rel="stylesheet">
+	<link href="css/calendar.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/icons.css" rel="stylesheet">
+	<link href="css/generics.css" rel="stylesheet">
+
+</head>
+
+<body id="skin-blur-violate">
+	<header id="header" class="media">
+		<a href="" id="menu-toggle"></a>
+		<a class="logo pull-left" href="index.html">SUPER ADMIN 1.0</a>
+
+		<div class="media-body">
+			<div class="media" id="top-menu">
+
+				<div id="time" class="pull-right">
+					<span id="hours"></span> :
+					<span id="min"></span> :
+					<span id="sec"></span>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<section id="main" class="p-relative" role="main">
+		<div class="clearfix"></div>
+		<a id="return" href="index.html"><i class="fa fa-mail-reply"></i> 返回</a>
+		<!-- Breadcrumb -->
+		<ol class="breadcrumb hidden-xs">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="#" class="active">product</a>
+			</li>
+		</ol>
+
+		<h4 class="page-title">生产看板</h4>
+
+		<hr class="whiter" />
+		<!-- Content -->
+		<section id="content" class="container">
+			<div class="block-area">
+				<div class="row">
+
+					<div class="col-md-8 ">
+						<div class="tile">
+							<div class="div1">
+								<h2 class="tile-title">朝阳正品进仓产量(日-近10天)</h2>
+								<div class="tile-config dropdown">
+									<a data-toggle="dropdown" href="" class="tooltips tile-menu" title="Options"></a>
+									<ul class="dropdown-menu pull-right text-right">
+										<li>
+											<a href="">Refresh</a>
+										</li>
+										<li>
+											<a href="">Settings</a>
+										</li>
+									</ul>
+								</div>
+								<div class="p-10">
+									<div id="bar-chart-in1" class="main-chart" style="height: 250px"></div>
+								</div>
+							</div>
+							<div class="div1">
+								<h2 class="tile-title">朝阳正品进仓产量(月-连续12个月)</h2>
+								<div class="tile-config dropdown">
+									<a data-toggle="dropdown" href="" class="tooltips tile-menu" title="Options"></a>
+									<ul class="dropdown-menu pull-right text-right">
+										<li>
+											<a href="">Refresh</a>
+										</li>
+										<li>
+											<a href="">Settings</a>
+										</li>
+									</ul>
+								</div>
+								<div class="p-10">
+									<div id="bar-chart-in2" class="main-chart" style="height: 250px"></div>
+								</div>
+							</div>
+							<div class="div1">
+								<h2 class="tile-title">朝阳正品进仓产量(年-近6年)</h2>
+								<div class="tile-config dropdown">
+									<a data-toggle="dropdown" href="" class="tooltips tile-menu" title="Options"></a>
+									<ul class="dropdown-menu pull-right text-right">
+										<li>
+											<a href="">Refresh</a>
+										</li>
+										<li>
+											<a href="">Settings</a>
+										</li>
+									</ul>
+								</div>
+								<div class="p-10">
+									<div id="bar-chart-in3" class="main-chart" style="height: 250px"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="tile">
+							<h2 class="tile-title">销售月订单完成率</h2>
+							<div class="tile-config dropdown">
+								<a data-toggle="dropdown" href="" class="tooltips tile-menu" title="Options"></a>
+								<ul class="dropdown-menu pull-right text-right">
+									<li>
+										<a href="">Refresh</a>
+									</li>
+									<li>
+										<a href="">Settings</a>
+									</li>
+								</ul>
+							</div>
+							<div class="p-10">
+								<div id="pie-canvas" class="main-chart" style="height: 250px">
+									<center><canvas id="canvas_circle" width="500" height="250">  浏览器不支持canvas  </canvas></center>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-7">
+						<div class="tile">
+							<h2 class="tile-title">轮胎合格率</h2>
+							<div class="tile-config dropdown">
+								<a data-toggle="dropdown" href="" class="tooltips tile-menu" title="Options"></a>
+								<ul class="dropdown-menu pull-right text-right">
+									<li>
+										<a href="">Refresh</a>
+									</li>
+									<li>
+										<a href="">Settings</a>
+									</li>
+								</ul>
+							</div>
+							<div class="p-10">
+								<div id="line-chart2" class="main-chart" style="height: 300px"></div>
+							</div>
+						</div>
+						
+						<div class="tile">
+							<h2 class="tile-title">硫化、成型生产节拍</h2>
+							<div class="tile-config dropdown">
+								<a data-toggle="dropdown" href="" class="tooltips tile-menu" title="Options"></a>
+								<ul class="dropdown-menu pull-right text-right">
+									<li>
+										<a href="">Refresh</a>
+									</li>
+									<li>
+										<a href="">Settings</a>
+									</li>
+								</ul>
+							</div>
+							<div class="p-10">
+								<div id="line-chart3" class="main-chart" style="height: 250px"></div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-md-5">
+						<div class="tile text-center">
+							<div class="tile-dark p-10">
+								<div class="pie-chart-tiny" data-percent="97">
+									<span class="percent"></span>
+									<span class="pie-title">当班硫化产量
+								</div>
+								<div class="pie-chart-tiny" data-percent="99">
+									<span class="percent"></span>
+									<span class="pie-title">当日硫化产量
+								</div>
+								<div class="pie-chart-tiny" data-percent="96">
+									<span class="percent"></span>
+									<span class="pie-title">当日累计进仓数
+								</div>
+							</div>
+						</div>
+						<div class="tile">
+							<h2 class="tile-title">朝阳硫化/成型产量</h2>
+							<div class="tile-config dropdown">
+								<a data-toggle="dropdown" href="" class="tooltips tile-menu" title="Options"></a>
+								<ul class="dropdown-menu pull-right text-right">
+									<li>
+										<a href="">Refresh</a>
+									</li>
+									<li>
+										<a href="">Settings</a>
+									</li>
+								</ul>
+							</div>
+							<div class="p-10">
+								<div id="line-chart1" class="main-chart" style="height: 291px"></div>
+							</div>
+						</div>
+						
+						<div class="col-md-12">
+								<div class="tile quick-stats media">
+									<div id="stats-line-3" class="pull-left"></div>
+									<div class="media-body">
+										<h2 data-value="1452">0</h2>
+										<small>胎胚库存曲线</small>
+									</div>
+								</div>
+						</div>
+						
+					</div>
+						
+					</div>
+			</div>
+			</div>
+
+			</div>
+			<div id="footLeft" style="font-size: 18px "><a class="footLine">浙江大学工程研究院中心</a></div>
+            <div id="footRight" style="font-size: 14px "><a class="footLine">杭州盈格信息技术有限公司——技术支持</a></div>
+
+			<br/><br/><br/>
+		</section>
+	</section>
+
+	<!-- Javascript Libraries -->
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Library -->
+	<script src="js/jquery-ui.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- jQuery Easing - Requirred for Lightbox -->
+
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Charts -->
+	<script src="js/charts/jquery.flot.js"></script>
+	<!-- Flot Main -->
+	<script src="js/charts/jquery.flot.time.js"></script>
+	<!-- Flot sub -->
+	<script src="js/charts/jquery.flot.animator.min.js"></script>
+	<!-- Flot sub -->
+	<script src="js/charts/jquery.flot.resize.min.js"></script>
+	<!-- Flot sub - for repaint when resizing the screen -->
+	<script src="js/charts/jquery.flot.orderBar.js"></script>
+	<!-- Flot Bar chart -->
+	<script src="js/charts/jquery.flot.pie.min.js"></script>
+	<!-- Flot Pie chart -->
+
+	<script src="js/sparkline.min.js"></script>
+	<!-- Sparkline - Tiny charts -->
+	<script src="js/easypiechart.js"></script>
+	<!-- EasyPieChart - Animated Pie Charts -->
+	<script src="js/charts.js"></script>
+	<!-- All the above chart related functions -->
+
+	<!-- Map -->
+	<script src="js/maps/jvectormap.min.js"></script>
+	<!-- jVectorMap main library -->
+	<script src="js/maps/usa.js"></script>
+	<!-- USA Map for jVectorMap -->
+	<script src="js/maps/world.js"></script>
+	<!-- World Map for jVectorMap -->
+
+	<!-- UX -->
+	<script src="js/scroll.min.js"></script>
+	<!-- Custom Scrollbar -->
+
+	<!-- Other -->
+	<script src="js/calendar.min.js"></script>
+	<!-- Calendar -->
+	<script src="js/feeds.min.js"></script>
+	<!-- News Feeds -->
+
+	<!-- All JS functions -->
+	<script src="js/functions.js"></script>
+	<script src="js/carousel4product.js"></script>
+	<script src="js/pie.js"></script>
+	<!--	<script type="text/javascript">
+		$(function() {
+			$(".div1").hide();
+			$(".div1").eq(0).show();
+		})
+		/*window.onload = function() //用window的onload事件，窗体加载完毕的时候
+		{*/
+		var index = 0;
+		//1秒轮播一次
+		var timer = setInterval(function() {
+			index = (index == 2) ? 0 : index + 1;
+			//某个div显示，其他的隐藏
+			$(".div1").hide();
+			$(".div1").eq((index - 1)).show(); //
+		}, 1000);
+		/*}*/
+	</script>-->
+	
+</body>
+
+</html>

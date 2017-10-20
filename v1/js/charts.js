@@ -5,13 +5,26 @@
 //Line Chart
 $(function () {
     if ($('#line-chart')[0]) {
-        var d1 = [[1,14], [2,15], [3,18], [4,16], [5,19], [6,17], [7,15], [8,16], [9,20], [10,16], [11,18]];
+        var d1 = [[1,14], [2,15], [3,18], [4,16], [5,19], [6,17], [7,15], [8,16], [9,20], [10,16], [11,18],[12,18]];
+        var d2 = [[1,18],[2,14],[3,15], [4,18], [5,16], [6,19], [7,17], [8,15], [9,16], [10,20], [11,16]];
+        var d3 = [[1,10],[2,10],[3,10], [4,10], [5,10], [6,10], [7,17], [8,15], [9,16], [10,20], [11,16]];
+        $.plot('#line-chart', [ 
+        {
 
-        $.plot('#line-chart', [ {
             data: d1,
-            label: "Data",
+            label:'d1',
+        },
+        {
 
-        },],
+            data: d2,
+            label:'d2',
+        },
+        {
+
+            data: d3,
+            label:'d3',
+        },
+        ],
 
             {
                 series: {
@@ -21,7 +34,7 @@ $(function () {
                         fill: 0.25,
                     },
 
-                    color: 'rgba(255,255,255,0.7)',
+                    // color: 'rgba(255,255,255,0.7)',
                     shadowSize: 0,
                     points: {
                         show: true,
@@ -41,10 +54,18 @@ $(function () {
                     shadowSize: 0,
                 },
                 xaxis: {
-                    tickColor: 'rgba(255,255,255,0)',
+                    // tickColor: 'rgba(255,255,255,0)',
+                    ticks: [[1, "1月"], [3, "3月"], [5, "5月"], [7, "7月"], [9, "9月"], [11, "11月"]], 
+                    min: 1, 
+                    max: 12,
                     tickDecimals: 0,
+                    tickSize: 2,  
+                    axisLabelUseCanvas: true,  
+                    axisLabelPadding: 10,
+      
                     font :{
                         lineHeight: 13,
+                        left:'10px',
                         style: "normal",
                         color: "rgba(255,255,255,0.8)",
                     }
