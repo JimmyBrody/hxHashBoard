@@ -70,7 +70,17 @@ $(document).ready(function(){
 	$('body').attr('id', skin);
 	$('#changeSkin').modal('hide');
     });
-    
+
+    // $('body').on('click', '.machine', function(e){
+    // e.preventDefault();
+    // var value = $(this).attr("value");
+    // var name = $(this).attr("name");
+    // $("#machine-chart-change").attr("name",name);
+    // $("#machine-chart-change").attr("value",value);
+    // var arr = new Array();
+    // arr[0] = value;
+    // $('#machineCharts').modal('hide');
+    // });
     /* --------------------------------------------------------
 	Components
     -----------------------------------------------------------*/

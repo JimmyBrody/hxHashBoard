@@ -269,7 +269,7 @@ $(function () {
                 label: 'Product 1',
                 bars : {
                         show : true,
-                        barWidth : 0.5,
+                        barWidth : 0.3,
                         order : 1,
                         fill:1,
                         lineWidth: 0,
@@ -842,10 +842,10 @@ $(function() {
 
 //轮胎合格率（近10天）
 $(function() {
+    
     if ($('#dynamic-chart-qualified')[0]) {
         var data = [],
-            totalPoints = 300;
-
+            totalPoints = 11;
         function getRandomData() {
             if (data.length > 0)
                 data = data.slice(1);
@@ -869,7 +869,13 @@ $(function() {
 
             return res;
         }
-
+        function getRandomData2(num) {
+            
+            if (num!=null) {
+                data.push(num);
+            };
+            
+        }
 
         var updateInterval = 1500;
         var plot = $.plot("#dynamic-chart-qualified", [ getRandomData() ], {
@@ -924,7 +930,10 @@ $(function() {
         function update() {
             plot.setData([getRandomData()]);
             // Since the axes don't change, we don't need to call plot.setupGrid()
-
+            $("#myModal").on("hidden.bs.modal", function() {
+                    $(this).removeData("bs.modal");
+                   plot.shutdown();
+                });
             plot.draw();
             setTimeout(update, updateInterval);
         }
@@ -943,6 +952,25 @@ $(function() {
         });
 
         $("<div id='dynamic-chart-tooltip' class='chart-tooltip'></div>").appendTo("body");
+
+        $("#myModal").on("hidden.bs.modal", function() {
+            $(this).removeData("bs.modal");
+            console.log("11111111111111111111111111");
+        });
+        $('body').on('click', '.machine', function(e){
+        e.preventDefault();
+        var value = $(this).attr("value");
+        var name = $(this).attr("name");
+        console.log("name1:"+name);
+        console.log("value1:"+value);
+        getRandomData2(value);
+        $("#machine-chart-change").attr("name",name);
+        $("#machine-chart-change").attr("value",value);
+        var arr = new Array();
+        arr[0] = value;
+        $('#machineCharts').modal('hide');
+        
+        });
     }
 });
 

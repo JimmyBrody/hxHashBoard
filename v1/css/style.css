@@ -195,6 +195,10 @@ img {
 .template-skins [class*="col-"] {
     margin-bottom: 10px;    
 }
+.opacity-5{
+    background:rgba(0, 0, 0, 0.1) !important;
+}
+
 
 /* --------------------------------------------------------
     Bootstrap Overrides
