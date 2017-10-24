@@ -1,6 +1,6 @@
-var myBar10Day = echarts.init(document.getElementById('my-bar-10d'),'shine');
+var myBar12m = echarts.init(document.getElementById('my-bar-12m'),'shine');
 
-optionBar10Day = {
+optionBar12m = {
     color: ['#3398DB'],
     tooltip : {
         trigger: 'axis',
@@ -17,7 +17,10 @@ optionBar10Day = {
     xAxis : [
         {
             type : 'category',
-            data : ['10月20日', '10月21日', '10月22日', '10月23日', '10月24日', '10月25日', '10月26日', '10月27日', '10月28日', '10月29日'],
+            axisLabel: {
+                fontSize: 16
+            },
+            data : ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
             axisTick: {
                 alignWithLabel: true
             }
@@ -25,23 +28,26 @@ optionBar10Day = {
     ],
     yAxis : [
         {
-            type : 'value'
+            type : 'value',
+            axisLabel: {
+                fontSize: 16
+            },
         }
     ],
     series : [
         {
             name:'',
             type:'bar',
-            barWidth: '50%',
-            data:[10, 52, 200, 334, 390, 330, 220, 550, 660 ,770]
+            barWidth: '60%',
+            data:[1000,5200, 2000, 3340, 3900, 3300, 2200, 5500, 6600,7700, 9900, 1000]
         }
     ]
 };
                     
                     
 
-getDateByDays(7);
-myBar10Day.setOption(optionBar10Day);
+
+myBar12m.setOption(optionBar12m);
 window.addEventListener("resize",function(){
-    myBar10Day.resize();
+    myBar12m.resize();
 });

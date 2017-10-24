@@ -1,6 +1,6 @@
-var myBar10Day = echarts.init(document.getElementById('my-bar-10d'),'shine');
+var myBar6y = echarts.init(document.getElementById('my-bar-6y'),'shine');
 
-optionBar10Day = {
+optionBar6y = {
     color: ['#3398DB'],
     tooltip : {
         trigger: 'axis',
@@ -17,7 +17,10 @@ optionBar10Day = {
     xAxis : [
         {
             type : 'category',
-            data : ['10月20日', '10月21日', '10月22日', '10月23日', '10月24日', '10月25日', '10月26日', '10月27日', '10月28日', '10月29日'],
+            axisLabel: {
+                fontSize: 16
+            },
+            data : ['2011年', '2012年', '2013年', '2014年', '2015年', '2016年'],
             axisTick: {
                 alignWithLabel: true
             }
@@ -25,23 +28,26 @@ optionBar10Day = {
     ],
     yAxis : [
         {
-            type : 'value'
+            type : 'value',
+            axisLabel: {
+                fontSize: 16
+            },
         }
     ],
     series : [
         {
             name:'',
             type:'bar',
-            barWidth: '50%',
-            data:[10, 52, 200, 334, 390, 330, 220, 550, 660 ,770]
+            barWidth: '35%',
+            data:[10000, 52000, 20000, 33400, 39000, 33000]
         }
     ]
 };
                     
                     
 
-getDateByDays(7);
-myBar10Day.setOption(optionBar10Day);
+
+myBar6y.setOption(optionBar6y);
 window.addEventListener("resize",function(){
-    myBar10Day.resize();
+    myBar12m.resize();
 });

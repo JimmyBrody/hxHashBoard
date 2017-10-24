@@ -1,5 +1,7 @@
 var myBar10Day = echarts.init(document.getElementById('my-bar-10d'),'shine');
 
+
+
 optionBar10Day = {
     color: ['#3398DB'],
     tooltip : {
@@ -17,6 +19,9 @@ optionBar10Day = {
     xAxis : [
         {
             type : 'category',
+            axisLabel: {
+                fontSize: 16
+            },
             data : ['10月20日', '10月21日', '10月22日', '10月23日', '10月24日', '10月25日', '10月26日', '10月27日', '10月28日', '10月29日'],
             axisTick: {
                 alignWithLabel: true
@@ -25,7 +30,10 @@ optionBar10Day = {
     ],
     yAxis : [
         {
-            type : 'value'
+            type : 'value',
+            axisLabel: {
+                fontSize: 16
+            },
         }
     ],
     series : [
@@ -40,7 +48,7 @@ optionBar10Day = {
                     
                     
 
-getDateByDays(7);
+
 myBar10Day.setOption(optionBar10Day);
 window.addEventListener("resize",function(){
     myBar10Day.resize();
