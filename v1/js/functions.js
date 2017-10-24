@@ -70,7 +70,15 @@ $(document).ready(function(){
 	$('body').attr('id', skin);
 	$('#changeSkin').modal('hide');
     });
-
+    $('body').on('click', '.index-left', function(e){
+    location.href='product.html';
+    });
+    $('body').on('click', '.index-down', function(e){
+    location.href='machine(1).html';
+    });
+    $('body').on('click', '.index-right', function(e){
+    location.href='product.html';
+    });
     // $('body').on('click', '.machine', function(e){
     // e.preventDefault();
     // var value = $(this).attr("value");

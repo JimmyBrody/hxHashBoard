@@ -198,8 +198,15 @@ img {
 .opacity-5{
     background:rgba(0, 0, 0, 0.1) !important;
 }
-
-
+.alink{
+    height: 80px !important;
+}
+.alink>h3{
+    text-align: center;
+}
+.alink:hover{
+    background: rgba(0,0,0,0.7);
+}
 /* --------------------------------------------------------
     Bootstrap Overrides
 -----------------------------------------------------------*/
@@ -718,7 +725,7 @@ hr {
 }
 
 .tile-title {
-    font-size: 11px;
+    font-size: 20px;
     text-transform: uppercase;
     display: inline-block;
     margin: 0;
