@@ -207,6 +207,10 @@ img {
 .alink:hover{
     background: rgba(0,0,0,0.7);
 }
+#myModalLabel{
+    font-size: 20px !important;
+}
+
 /* --------------------------------------------------------
     Bootstrap Overrides
 -----------------------------------------------------------*/

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="UTF-8">
+
+	<meta name="description" content="Violate Responsive Admin Template">
+	<meta name="keywords" content="Super Admin, Admin, Template, Bootstrap">
+
+	<title>Super Admin Responsive Template</title>
+
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/form.css" rel="stylesheet">
+	<link href="css/calendar.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/icons.css" rel="stylesheet">
+	<link href="css/generics.css" rel="stylesheet">
+</head>
+
+<body id="skin-blur-violate">
+
+	<header id="header" class="media">
+		<div id="menu-toggle">
+			<a href=""></a>
+		</div>
+		<div class="logo pull-left">
+			<a>中策橡胶有限公司管理系统 1.0</a>
+		</div>
+		<div class="media-body">
+			<div class="media" id="top-menu">
+				<div id="time" class="pull-right">
+					<span id="hours"></span> :
+					<span id="min"></span> :
+					<span id="sec"></span>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<div class="clearfix"></div>
+
+	<section id="main" class="p-relative" role="main">
+
+		<!-- Content -->
+		<section id="content" class="container">
+
+			<!-- Breadcrumb -->
+			<ol class="breadcrumb hidden-xs" style="font-size: 20px;">
+				<li>
+					<a href="#" class="active">Home</a>
+				</li>
+			</ol>
+
+			<div>
+				<div>
+					<h4 class="page-title">主看板</h4>
+				</div>
+
+			</div>
+
+			<!-- Main Widgets -->
+
+			<div class="block-area">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="row">
+							<div class="col-md-4 col-xs-6">
+								<div class="tile quick-stats media">
+										<img style="width: 40%;height: 80%;padding-left: 20px;" src="img/统计.png" />
+								</div>
+							</div>
+
+							<div class="col-md-4 col-xs-6">
+								<div class="tile quick-stats media">
+									<small>Shipments today</small>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-xs-6">
+								<div class="tile quick-stats media">
+									<small>Shipments today</small>
+								</div>
+							</div>
+						</div>
+
+						<!-- Main Chart -->
+						<div class="tile">
+							<h2 class="tile-title">Statistics</h2>
+							<div class="tile-config dropdown">
+								<ul class="dropdown-menu pull-right text-right">
+									<li>
+										<a class="tile-info-toggle" href="">Chart Information</a>
+									</li>
+									<li>
+										<a href="">Refresh</a>
+									</li>
+									<li>
+										<a href="">Settings</a>
+									</li>
+								</ul>
+							</div>
+							<div class="p-10">
+								<div id="line-chart" class="main-chart" style="height: 250px"></div>
+
+								<div class="chart-info">
+									<ul class="list-unstyled">
+										<li class="m-b-10">
+											Total Sales 1200
+											<span class="pull-right text-muted t-s-0">
+                                                    <i class="fa fa-chevron-up"></i>
+                                                    +12%
+                                                </span>
+										</li>
+										<li>
+											<small>
+                                                    Local 640
+                                                    <span class="pull-right text-muted t-s-0"><i class="fa m-l-15 fa-chevron-down"></i> -8%</span>
+                                                </small>
+											<div class="progress progress-small">
+												<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+											</div>
+										</li>
+										<li>
+											<small>
+                                                    Foreign 560
+                                                    <span class="pull-right text-muted t-s-0">
+                                                        <i class="fa m-l-15 fa-chevron-up"></i>
+                                                        -3%
+                                                    </span>
+                                                </small>
+											<div class="progress progress-small">
+												<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Dynamic Chart -->
+						<div class="tile">
+							<h2 class="tile-title">Server Process</h2>
+							<div class="tile-config dropdown">
+								<ul class="dropdown-menu pull-right text-right">
+									<li>
+										<a href="">Refresh</a>
+									</li>
+									<li>
+										<a href="">Settings</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="p-t-10 p-r-5 p-b-5">
+								<div id="dynamic-chart" style="height: 200px"></div>
+							</div>
+
+						</div>
+
+						<!--<div class="clearfix"></div>-->
+					</div>
+
+					<div class="col-md-4">
+						<div class="tile">
+							<h2 class="tile-title">Social Media activities</h2>
+							<div class="tile-config dropdown">
+								<ul class="dropdown-menu pull-right text-right">
+									<li>
+										<a href="">Refresh</a>
+									</li>
+									<li>
+										<a href="">Settings</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="listview narrow" style="height: 250px;">
+
+								<div class="media">
+									<div class="pull-right">
+										<div class="counts">367892</div>
+									</div>
+									<div class="media-body">
+										<h6>FACEBOOK LIKES</h6>
+									</div>
+								</div>
+
+								<div class="media">
+									<div class="pull-right">
+										<div class="counts">2012</div>
+									</div>
+									<div class="media-body">
+										<h6>GOOGLE +1s</h6>
+									</div>
+								</div>
+
+								<div class="media">
+									<div class="pull-right">
+										<div class="counts">56312</div>
+									</div>
+									<div class="media-body">
+										<h6>YOUTUBE VIEWS</h6>
+									</div>
+								</div>
+
+								<div class="media">
+									<div class="pull-right">
+										<div class="counts">785879</div>
+									</div>
+									<div class="media-body">
+										<h6>TWITTER FOLLOWERS</h6>
+									</div>
+								</div>
+
+								<div class="media">
+									<div class="pull-right">
+										<div class="counts">68</div>
+									</div>
+									<div class="media-body">
+										<h6>WEBSITE COMMENTS</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tile">
+							<h2 class="tile-title">Pie Chart</h2>
+							<div class="tile-config dropdown">
+								<a data-toggle="dropdown" href="" class="tooltips tile-menu" title="Options"></a>
+								<ul class="dropdown-menu pull-right text-right">
+									<li>
+										<a href="">Refresh</a>
+									</li>
+									<li>
+										<a href="">Settings</a>
+									</li>
+								</ul>
+							</div>
+							<div class="p-10">
+								<div id="my-pie-sale" class="main-chart" style="height: 380px"></div>
+							</div>
+						</div>
+
+						<!-- Activity -->
+						<!--<div class="clearfix"></div>-->
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<!-- Javascript Libraries -->
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Library -->
+	<script src="js/jquery-ui.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- jQuery Easing - Requirred for Lightbox + Pie Charts-->
+
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Charts -->
+	<script src="js/charts/jquery.flot.js"></script>
+	<!-- Flot Main -->
+	<script src="js/charts/jquery.flot.time.js"></script>
+	<!-- Flot sub -->
+	<script src="js/charts/jquery.flot.animator.min.js"></script>
+	<!-- Flot sub -->
+	<script src="js/charts/jquery.flot.resize.min.js"></script>
+	<!-- Flot sub - for repaint when resizing the screen -->
+
+	<script src="js/sparkline.min.js"></script>
+	<!-- Sparkline - Tiny charts -->
+	<script src="js/easypiechart.js"></script>
+	<!-- EasyPieChart - Animated Pie Charts -->
+	<script src="js/charts.js"></script>
+	<!-- All the above chart related functions -->
+
+	<!-- Map -->
+	<script src="js/maps/jvectormap.min.js"></script>
+	<!-- jVectorMap main library -->
+	<script src="js/maps/usa.js"></script>
+	<!-- USA Map for jVectorMap -->
+
+	<!--  Form Related -->
+	<script src="js/icheck.js"></script>
+	<!-- Custom Checkbox + Radio -->
+
+	<!-- UX -->
+	<script src="js/scroll.min.js"></script>
+	<!-- Custom Scrollbar -->
+
+	<!-- Other -->
+	<script src="js/calendar.min.js"></script>
+	<!-- Calendar -->
+	<script src="js/feeds.min.js"></script>
+	<!-- News Feeds -->
+
+	<!-- All JS functions -->
+	<script src="js/functions.js"></script>
+</body>
+
+</html>

@@ -70,6 +70,21 @@ $(document).ready(function(){
 	$('body').attr('id', skin);
 	$('#changeSkin').modal('hide');
     });
+
+    //machine页面
+    $('body').on('click', '.machine', function(e){
+        e.preventDefault();
+        var value = $(this).attr("value");
+        var name = $(this).attr("name");
+        console.log("name1:"+name);
+        console.log("value1:"+value);
+        $("#myModalLabel").html(name);
+        // $("#machine-chart-change").attr("value",value);
+        // $('#machineCharts').modal('hide');
+        
+        });
+
+  //点击跳转页面
     $('body').on('click', '.index-left', function(e){
     location.href='product.html';
     });
