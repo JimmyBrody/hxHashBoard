@@ -243,7 +243,7 @@ function diCarousel() {
 }
 
 myLineChartJiaoliao.setOption(options[0]);
-document.getElementById('myh2').innerHTML = h2s[0];
+document.getElementById('jiaoliaoH2').innerHTML = h2s[0];
 
 window.addEventListener("resize", function() {
 	myLineChartJiaoliao.resize();

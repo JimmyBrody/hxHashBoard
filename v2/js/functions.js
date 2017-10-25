@@ -74,11 +74,10 @@ $(document).ready(function(){
     //machine页面
     $('body').on('click', '.machine', function(e){
         e.preventDefault();
-        var value = $(this).attr("value");
         var name = $(this).attr("name");
-        console.log("name1:"+name);
-        console.log("value1:"+value);
-        $("#myModalLabel").html(name);
+        var pid = $(this).attr("pid");
+        // console.log("name1:"+name);
+        $("#myModalLabel").html(pid+":"+name);
         // $("#machine-chart-change").attr("value",value);
         // $('#machineCharts').modal('hide');
         
