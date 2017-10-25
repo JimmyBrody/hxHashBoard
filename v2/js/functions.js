@@ -89,7 +89,7 @@ $(document).ready(function(){
     location.href='product.html';
     });
     $('body').on('click', '.index-down', function(e){
-    location.href='machine(1).html';
+    location.href='machine.html';
     });
     $('body').on('click', '.index-right', function(e){
     location.href='product.html';
