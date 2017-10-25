@@ -121,7 +121,7 @@ var isCarousel = true;
 var dindex = 1;
 var options = [optionBar10Day,optionBar12m,optionBar6y];
 var h2s = ["朝阳正品进仓产量(日-近10天)","朝阳正品进仓产量(月-连续12个月)","朝阳正品进仓产量(年-近6年)"];
-var mytimer = setInterval("diCarousel()", 1000); //1000为1秒钟
+var mytimer = setInterval("diCarousel()", 5000); //1000为1秒钟
 
 function diCarousel(){
 	if(!isCarousel){

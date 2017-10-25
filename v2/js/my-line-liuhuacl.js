@@ -29,7 +29,7 @@ optionLiuhuachxingCl = {
             axisLabel: {
                 fontSize: 16
             },
-            data : ['周一','周二','周三','周四','周五','周六','周日']
+            data : getDateByDays(5)
         }
     ],
     yAxis : [

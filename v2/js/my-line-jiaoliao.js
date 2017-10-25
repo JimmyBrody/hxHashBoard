@@ -50,7 +50,7 @@ optionJiaoliao12h = {
         trigger: 'axis'
     },
     legend: {
-        data:['胚胎库存']
+        data:['胶料库存']
     },
     toolbox: {
         show : false,
@@ -70,7 +70,7 @@ optionJiaoliao12h = {
             axisLabel: {
                 fontSize: 16
             },
-            data : ['6:00','7:00','8:00','9:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00']
+            data : getHByDays(12),
         }
     ],
     yAxis : [
@@ -84,7 +84,7 @@ optionJiaoliao12h = {
     ],
     series : [
         {
-            name:'胚胎库存',
+            name:'胶料库存',
             type:'line',
              data:[1915, 1823, 1906, 1993, 2135, 2076, 1985, 1893, 1931,1820,1896,1943],
             markPoint : {
@@ -111,7 +111,7 @@ optionJiaoliao10day = {
         trigger: 'axis'
     },
     legend: {
-        data:['胚胎库存']
+        data:['胶料库存']
     },
     toolbox: {
         show : false,
@@ -131,7 +131,7 @@ optionJiaoliao10day = {
             axisLabel: {
                 fontSize: 16
             },
-            data : ['6:00','7:00','8:00','9:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00']
+            data : getDateByDays(10)
         }
     ],
     yAxis : [
@@ -145,7 +145,7 @@ optionJiaoliao10day = {
     ],
     series : [
         {
-            name:'胚胎库存',
+            name:'胶料库存',
             type:'line',
              data:[1915, 1823, 1906, 1993, 2135, 2076, 1985, 1893, 1931,1820,1896,1943],
             markPoint : {
@@ -172,7 +172,7 @@ optionJiaoliao12m = {
         trigger: 'axis'
     },
     legend: {
-        data:['胚胎库存']
+        data:['胶料库存']
     },
     toolbox: {
         show : false,
@@ -192,7 +192,7 @@ optionJiaoliao12m = {
             axisLabel: {
                 fontSize: 16
             },
-            data : ['6:00','7:00','8:00','9:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00']
+            data : getMByNum(12)
         }
     ],
     yAxis : [
@@ -206,7 +206,7 @@ optionJiaoliao12m = {
     ],
     series : [
         {
-            name:'胚胎库存',
+            name:'胶料库存',
             type:'line',
              data:[1915, 1823, 1906, 1993, 2135, 2076, 1985, 1893, 1931,1820,1896,1943],
             markPoint : {
@@ -227,7 +227,7 @@ var isCarousel = true;
 var dindex = 1;
 var options = [optionJiaoliao12h, optionJiaoliao10day, optionJiaoliao12m];
 var h2s = ["胶料消耗曲线图(近12小时)", "胶料消耗曲线图(近10天)", "胶料消耗曲线图(近12月)"];
-var mytimer = setInterval("diCarousel()", 1000); //1000为1秒钟
+var mytimer = setInterval("diCarousel()", 5000); //1000为1秒钟
 
 function diCarousel() {
 	if(!isCarousel) {
