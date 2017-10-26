@@ -35,7 +35,16 @@ optionPieSale = {
                     shadowOffsetX: 0,
                     shadowColor: 'rgba(0, 0, 0, 0.5)'
                 }
-            }
+            },
+            itemStyle:{ 
+            normal:{ 
+                  label:{ 
+                    show: true, 
+                    formatter: '{b} : {c} ({d}%)' 
+                  }, 
+                  labelLine :{show:true} 
+                } 
+            } 
         }
     ]
 };

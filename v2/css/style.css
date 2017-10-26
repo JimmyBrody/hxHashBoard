@@ -398,7 +398,7 @@ blockquote small {
 /* Logo */
 
 .logo {
-	width: 280px;
+	width: 420px;
 	height: 49px;
 	text-align: center;
 	padding: 14px 0 12px 40px;
@@ -529,7 +529,7 @@ blockquote small {
 }
 
 #footLeft {
-	width: 230px;
+	width: 350px;
 	height: 0;
 	border-top: none;
 	border-bottom: 29px rgba(0, 0, 0, 0.7) solid;
@@ -542,7 +542,7 @@ blockquote small {
 }
 
 #footRight {
-	width: 290px;
+	width: 180px;
 	height: 0;
 	border-top: none;
 	border-bottom: 24px rgba(0, 0, 0, 0.7) solid;

@@ -31,13 +31,15 @@ optionPieQuality = {
                 {value:16, name: '问题四'},
                 {value:5, name: '问题五'}
             ],
-            itemStyle: {
-                emphasis: {
-                    shadowBlur: 10,
-                    shadowOffsetX: 0,
-                    shadowColor: 'rgba(0, 0, 0, 0.5)'
-                }
-            }
+            itemStyle:{ 
+            normal:{ 
+                  label:{ 
+                    show: true, 
+                    formatter: '{b} : {c} ({d}%)' 
+                  }, 
+                  labelLine :{show:true} 
+                } 
+            } 
         }
     ]
 };

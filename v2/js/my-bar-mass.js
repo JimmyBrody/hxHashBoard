@@ -22,7 +22,7 @@ optionBarMass = {
             axisLabel: {
                 fontSize: 16
             },
-            data : ['10月20日', '10月21日', '10月22日', '10月23日', '10月24日', '10月25日', '10月26日', '10月27日', '10月28日', '10月29日'],
+            data : getDateByDays2(10),
             axisTick: {
                 alignWithLabel: true
             }

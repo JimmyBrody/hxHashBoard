@@ -37,7 +37,7 @@ optionLiuhuachxing = {
         {
             type : 'value',
             axisLabel : {
-                formatter: '{value}',
+                formatter: '{value} 分钟',
                 fontSize: 16
             }
         }

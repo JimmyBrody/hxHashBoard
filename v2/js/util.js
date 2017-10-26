@@ -38,6 +38,20 @@ function getDateByDays(days) {
 			return d.format("M-dd");
 		});
 		r = r.reverse();
+		console.log(r);
+	return r;
+}
+function getDateByDays2(days) {
+	
+	
+	var r = Array.apply(null, new Array(days))
+		.map((v, i) => {
+			d = new Date();
+			d.setDate(d.getDate() - i -1);
+			return d.format("M-dd");
+		});
+		r = r.reverse();
+		console.log(r);
 	return r;
 }
 
