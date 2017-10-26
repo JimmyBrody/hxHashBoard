@@ -79,7 +79,8 @@ optionPeitai = {
             inside: false,
             textStyle: {
                 color: '#fff'
-            }
+            },
+            fontSize: 14
         },
         axisTick: {
             show: false
@@ -100,7 +101,7 @@ optionPeitai = {
             textStyle: {
                 color: '#fff'
             },
-            fontSize: 16
+            fontSize: 14
         }
     },
     dataZoom: [

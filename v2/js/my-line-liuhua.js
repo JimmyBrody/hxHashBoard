@@ -28,7 +28,7 @@ optionLiuhuachxing = {
             type : 'category',
             boundaryGap : false,
             axisLabel: {
-                fontSize: 16
+                fontSize: 14
             },
             data : getHByDays(10)
         }
@@ -38,7 +38,7 @@ optionLiuhuachxing = {
             type : 'value',
             axisLabel : {
                 formatter: '{value} 分钟',
-                fontSize: 16
+                fontSize: 14
             }
         }
     ],
@@ -46,7 +46,7 @@ optionLiuhuachxing = {
         {
             name:'成型节拍',
             type:'line',
-            data:[50, 50, 50, 50, 50, 50, 50, 50, 50,50],
+            data:[4.7, 4.6, 4.5, 4.5, 4.6, 4.7, 4.8, 4.9, 5.0,5.0],
             markPoint : {
                 data : [
                     {type : 'max', name: '最大值'},
@@ -63,7 +63,7 @@ optionLiuhuachxing = {
         {
             name:'硫化节拍',
             type:'line',
-             data:[25, 25, 25, 25, 25, 25, 25, 25, 25,25],
+             data:[47, 48, 45, 50, 46, 44, 48, 43, 49,47],
             markPoint : {
                 data : [
                     {type : 'max', name: '最大值'},

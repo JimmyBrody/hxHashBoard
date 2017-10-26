@@ -20,7 +20,7 @@ optionBarMass = {
         {
             type : 'category',
             axisLabel: {
-                fontSize: 16
+                fontSize: 14
             },
             data : getDateByDays2(10),
             axisTick: {
@@ -32,7 +32,7 @@ optionBarMass = {
         {
             type : 'value',
             axisLabel: {
-                fontSize: 16
+                fontSize: 14
             },
         }
     ],

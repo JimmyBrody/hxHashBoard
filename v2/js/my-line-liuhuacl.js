@@ -27,7 +27,7 @@ optionLiuhuachxingCl = {
             type : 'category',
             boundaryGap : false,
             axisLabel: {
-                fontSize: 16
+                fontSize: 14
             },
             data : getDateByDays(5)
         }
@@ -37,7 +37,7 @@ optionLiuhuachxingCl = {
             type : 'value',
             axisLabel : {
                 formatter: '{value}',
-                fontSize: 16
+                fontSize: 14
             }
         }
     ],

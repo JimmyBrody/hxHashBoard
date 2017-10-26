@@ -68,7 +68,7 @@ optionJiaoliao12h = {
             type : 'category',
             boundaryGap : false,
             axisLabel: {
-                fontSize: 16
+                fontSize: 14
             },
             data : getHByDays(12),
         }
@@ -78,7 +78,7 @@ optionJiaoliao12h = {
             type : 'value',
             axisLabel : {
                 formatter: '{value}',
-                fontSize: 16
+                fontSize: 14
             }
         }
     ],
@@ -129,7 +129,7 @@ optionJiaoliao10day = {
             type : 'category',
             boundaryGap : false,
             axisLabel: {
-                fontSize: 16
+                fontSize: 14
             },
             data : getDateByDays(10)
         }
@@ -139,7 +139,7 @@ optionJiaoliao10day = {
             type : 'value',
             axisLabel : {
                 formatter: '{value}',
-                fontSize: 16
+                fontSize: 14
             }
         }
     ],
@@ -190,7 +190,7 @@ optionJiaoliao12m = {
             type : 'category',
             boundaryGap : false,
             axisLabel: {
-                fontSize: 16
+                fontSize: 14
             },
             data : getMByNum(12)
         }
@@ -200,7 +200,7 @@ optionJiaoliao12m = {
             type : 'value',
             axisLabel : {
                 formatter: '{value}',
-                fontSize: 16
+                fontSize: 14
             }
         }
     ],
