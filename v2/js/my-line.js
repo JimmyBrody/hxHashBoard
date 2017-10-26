@@ -63,12 +63,6 @@ optionLuntai = {
 						name: '最小值'
 					}
 				]
-			},
-			markLine: {
-				data: [{
-					type: 'average',
-					name: '平均值'
-				}]
 			}
 		},
 		{
@@ -85,12 +79,6 @@ optionLuntai = {
 						name: '最小值'
 					}
 				]
-			},
-			markLine: {
-				data: [{
-					type: 'average',
-					name: '平均值'
-				}]
 			}
 		},
 		{
@@ -107,12 +95,6 @@ optionLuntai = {
 						name: '最小值'
 					}
 				]
-			},
-			markLine: {
-				data: [{
-					type: 'average',
-					name: '平均值'
-				}]
 			}
 		}
 

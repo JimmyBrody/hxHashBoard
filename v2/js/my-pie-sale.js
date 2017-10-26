@@ -25,7 +25,7 @@ optionPieSale = {
             center: ['50%', '50%'],
             selectedMode: 'single',
             data:[
-                {value:85, name: '已完成'},
+                {value:85, name: '已完成', selected:true},
                 {value:15, name: '未完成'},
                 {value:3, name: '取消'}
             ],
