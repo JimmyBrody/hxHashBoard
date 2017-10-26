@@ -44,8 +44,8 @@ optionPieDay = {
                                 }  
                             },   
             detail : {
-            	formatter:'{value}%'
-            	
+            	formatter:'{value}%',
+                offsetCenter: [0, '70%']
             },
             data:[{value: 98, name: '当日硫化'}]
         }

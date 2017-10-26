@@ -28,7 +28,9 @@ optionPieAll = {
                     shadowBlur: 10
                 }
             },
-            detail : {formatter:'{value}%'},
+            detail : {formatter:'{value}%',
+                offsetCenter: [0, '70%']
+            },
             axisLine: {            // 坐标轴线  
                      lineStyle: {       // 属性lineStyle控制线条样式  
                          color: [[0.2, '#c23531'], [0.8, '#63869e'], [1, '#91c7ae']]
