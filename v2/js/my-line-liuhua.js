@@ -2,10 +2,13 @@
 var myLineChartLiuhuachxing = echarts.init(document.getElementById('line-chart-Liuhuachxing'),'shine');
 
 optionLiuhuachxing = {
-//  title : {
-//      text: '未来一周气温变化',
-//      subtext: '纯属虚构'
-//  },
+ title : {
+     text: '单位：分钟',
+     textStyle:{
+        fontSize: 14
+     }
+     
+ },
     tooltip : {
         trigger: 'axis'
     },
@@ -37,7 +40,7 @@ optionLiuhuachxing = {
         {
             type : 'value',
             axisLabel : {
-                formatter: '{value} 分钟',
+                formatter: '{value}',
                 fontSize: 14
             }
         }

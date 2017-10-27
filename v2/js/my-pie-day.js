@@ -1,6 +1,11 @@
 var myLineChartLunTaiDay = echarts.init(document.getElementById('pie-day'),'shine');
 
 optionPieDay = {
+    title:{
+        text:'当日硫化',
+        top:240,
+        right:80,
+    },
   tooltip : {
         formatter: "{a} <br/>{b} : {c}%"
     },
@@ -47,7 +52,7 @@ optionPieDay = {
             	formatter:'{value}%',
                 offsetCenter: [0, '70%']
             },
-            data:[{value: 98, name: '当日硫化'}]
+            data:[{value: 98, name: ''}]
         }
     ]
 };

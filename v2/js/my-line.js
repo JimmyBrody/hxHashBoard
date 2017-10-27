@@ -46,7 +46,7 @@ optionLuntai = {
 			formatter: '{value}'
 		},
 		max: 100,
-		min: 95,
+		min: 96,
 		maxInterval: 10
 	}],
 	series: [{

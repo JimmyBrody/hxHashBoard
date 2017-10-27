@@ -3,6 +3,11 @@ var myLineChartLunTaiDay = echarts.init(document.getElementById('pie-all'),'shin
 
 
 optionPieAll = {
+    title:{
+        text:'当日进仓',
+        top:240,
+        right:80,
+    },
   tooltip : {
         formatter: "{a} <br/>{b} : {c}%"
     },
@@ -36,7 +41,7 @@ optionPieAll = {
                          color: [[0.2, '#c23531'], [0.8, '#63869e'], [1, '#91c7ae']]
                                 }  
                             },     
-            data:[{value: 99, name: '当日进仓'}]
+            data:[{value: 99, name: ''}]
         }
     ]
 };
