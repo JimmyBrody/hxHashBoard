@@ -95,7 +95,7 @@ optionPeitai = {
             show: true
         },
         axisTick: {
-            show: false
+            show: true
         },
         axisLabel: {
             textStyle: {
@@ -124,24 +124,10 @@ optionPeitai = {
             type: 'bar',
             itemStyle: {
                 normal: {
-                    color: new echarts.graphic.LinearGradient(
-                        0, 0, 0, 1,
-                        [
-                            {offset: 0, color: '#fff'},
-                            {offset: 0.55, color: '#c23531'},
-                            {offset: 1, color: '#c23531'}
-                        ]
-                    )
+                    color: '#c23531'
                 },
                 emphasis: {
-                    color: new echarts.graphic.LinearGradient(
-                        0, 0, 0, 1,
-                        [
-                            {offset: 0, color: '#c23531'},
-                            {offset: 0.7, color: '#c23531'},
-                            {offset: 1, color: '#fff'}
-                        ]
-                    )
+                    color: '#c23531'
                 }
             },
             data: data

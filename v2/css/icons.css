@@ -98,7 +98,7 @@
 
 
 /* Others */
-#menu-toggle { background-image: url(../img/icon/menu.png); }
+#menu-toggle { background-image: url(../img/icon/home.png); }
 
 /* Form */
 .sa-plus {
@@ -173,7 +173,7 @@ only screen and (                min-resolution: 1.25dppx) {
     .sa-plus { background-image: url(../img/icon/plus-sm@2x.png); background-size: 13px 13px; }
     
     /* Others */
-    #menu-toggle { background-image: url(../img/icon/menu@2x.png); background-size: 18px 13px; }
+    #menu-toggle { background-image: url(../img/icon/home@2x.png); background-size: 30px 25px; }
     .main-search { background-image: url(../img/icon/search@2x.png); background-size: 25px 25px; }
     .tile-config > .tile-menu { background-image: url(../img/icon/tile-actions@2x.png); background-size: 13px 3px; }
     .message-search:not(:focus) { background-image: url(../img/icon/search@2x.png); background-size: 25px 25px; }

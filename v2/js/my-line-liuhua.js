@@ -42,7 +42,9 @@ optionLiuhuachxing = {
             axisLabel : {
                 formatter: '{value}',
                 fontSize: 14
-            }
+            },
+            // splitNumber:5,
+            // maxInterval:10
         }
     ],
     series : [
